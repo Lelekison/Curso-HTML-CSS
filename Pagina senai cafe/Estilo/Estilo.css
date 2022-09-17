@@ -1,6 +1,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size:14px;
+    background-image: url(/imagens/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover 
 }
 
 h1 {
@@ -27,6 +30,10 @@ p, li, section {
 
 section {
     margin-bottom: 100px;
+}
+
+li {font-family: 'Dancing Script', cursive;
+
 }
 
 footer {
