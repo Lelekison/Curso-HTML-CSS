@@ -1,0 +1,24 @@
+h1 {
+    color: rgb(255, 123, 0);
+}
+h2 {
+    color: rgb(255, 0, 0);
+}
+p {
+    color: rgb(255, 255, 255);
+}
+header {
+    color: lightblue;
+}
+aside {
+    color: aquamarine;
+}
+footer {
+    color: greenyellow;
+}
+Img {
+    color:antiquewhite 
+}
+img  {
+    color: black;
+}
