@@ -29,7 +29,8 @@ header h1{
     color: white;
 }
 .janela1 {
-    background-color: rgb(153,204,51);
+    background-image: url(imagens/ricardão.jpg);
+    background-repeat: no-repeat;
     height: 500px;
     width: 600px;
     float: left;
