@@ -6,6 +6,9 @@ html, body, h1, h2, h3, h4, p {
 html {
     background: rgb(229,229,229);
 }
+body{
+    background-image: url(imagens/decorar\ o\ pinto.jfif);
+}
 article, aside, section, header, footer, nav {
     display:block;
 }
