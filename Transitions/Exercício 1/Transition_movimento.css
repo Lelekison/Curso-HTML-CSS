@@ -1,0 +1,51 @@
+header,
+footer
+{
+    display: block;
+}
+main {
+    position: relative;
+    width: 760px;
+    height: 500px;
+    margin: 10px auto;
+    box-shadow: 0 0 10px #999999;
+    background-color: white;
+}
+main::after {
+    clear: both;
+}
+header {
+    width: 760px;
+    height: 110px;
+    background-image: url(Imagens/header.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+#janela1, #janela2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 130px;
+}
+#janela1 {
+    left: 10px;
+    background-color: blue;
+    cursor: pointer;
+}
+#janela2 {
+    left: 180px;
+    background-color: red;
+    cursor: pointer;
+}
+#janela1:hover + #janela2 {
+    transition: all 2s ease-out;
+    transform: rotate(9000deg);
+    left: 600px;
+}
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+}

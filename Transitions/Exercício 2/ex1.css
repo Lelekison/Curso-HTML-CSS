@@ -1,0 +1,71 @@
+body{
+    background-color: #996;
+    margin: 0;
+}
+#topo {
+    background-image: url(imagens2/header.jpg);
+    height: 92px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+#janela {
+    height: 500px;
+    width: 860px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.janela_palestrante{
+    position: relative;
+    float: left;
+    width: 256px;
+    height: 256px;
+    border: solid 5px #fff;
+    background-color: #1a1a1a;
+    margin: 0 20px 50px 0;
+    box-shadow: 2px 2px 2px #333;
+}
+.janela_foto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 256px;
+    height: 256px;
+    z-index: 1;
+    clip: rect(0 256px 256px 0);
+}
+.janela_texto {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    width: 246px;
+    height: 256px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.janela_texto:hover {
+    top: 100px;
+}
+h3 {
+    font-family: 'PT Mono', sans-serif;
+    font-size: 18px;
+    color: #008bc0;
+    letter-spacing: -0.1em;
+    margin: 0;
+}
+p {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    line-height: 150%;
+}
+.azul {
+    color: #008bc0;
+}
