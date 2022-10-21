@@ -1,0 +1,10 @@
+@media only screen and (min-width:1367px) and (max-width:1981px) {
+    header {
+        height: 800px;
+    }
+}
+@media only screen and (min-width:1981px) and (max-width:2880px) {
+    header {
+        height: 1000px
+    }
+}
