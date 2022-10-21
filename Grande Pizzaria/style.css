@@ -1,0 +1,112 @@
+* {
+padding: 0;
+margin: 0;
+}
+body {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+nav img {
+    position: absolute;
+    left: 10px;top: 10px;
+    z-index: 1;
+}
+nav ul#menu-desktop {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+nav ul#menu-desktop li {
+    list-style-type: none;
+    display: inline;
+}
+nav ul#menu-desktop li a {
+    padding: 30px 40px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-right: -3px;
+    font-family: roboto, sans-serif;
+    font-size: 80%;
+    letter-spacing: 0.60;
+}
+nav ul#menu-desktop  li a:hover {
+    background-color: rgba(213, 26, 44, 1);
+}
+nav ul#menu-mobile, nav ul#menu-btn {
+    display: none;
+}
+header {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url(../img/foto-capa-pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+header h1 {
+    font-family: roboto, sans-serif;
+    font-size: 600%;color: #fff;
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: 0 0 10px #000;
+}
+main {
+    margin: 0;
+    width: 100%;
+}
+main section#apresentacao {
+    width: 90%;
+    display: block;
+    max-width: 1500px;
+    min-width: 320px;
+    margin: 100px auto;
+}
+main section.pizzas {
+    font-family: roboto, sans-serif;
+    width: 30%;
+    float: left;
+    background-color: #fff;
+    box-shadow: 0 0 10px #666;
+    border-radius: 5px;
+}
+main section.pizzas img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+main section.pizzas h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+main section.pizzas p {
+    text-align: center;
+    padding: 5%;
+    margin-top: 1%;
+    color: #666;
+}
+main section.pizzas a {
+    display: block;
+    text-align: center;
+    background-color: forestgreen;
+    color: white;
+    padding: 3%;
+    text-decoration: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+main section.direita {
+    float: right;
+}
+main section.centro {
+    margin-left: 5%;
+}

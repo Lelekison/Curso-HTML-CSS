@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (min-width:300px) and (max-width:700px)">
+    <link rel="stylesheet" href="desktop-grande.css">
+
+    <title>Grande pizzaria</title>
+</head>
+<body>
+    <nav>
+        <img src="img/logo-pizzaria-grande.png" alt="">
+        <ul id="menu-desktop">
+            <li><a href="">Pizzas</a></li>
+            <li><a href="">Meus Pedidos</a></li>
+            <li><a href="">Contato</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+        <ul id="menu-mobile">
+            <li><a href="">Pizzas</a></li>
+            <li><a href="">Meus Pedidos</a></li>
+            <li><a href="">Contatos</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+        <div id="menu-bnt">
+            <svg width="30" Height="50">
+                <path d="M0,5 30,5" stroke="#fff" stroke-width="4"/>
+                <path d="M0,15 30,15" stroke="#fff" stroke-width="4"/>
+                <path d="M0,25 30,25" stroke="#fff" stroke-width="4"/>
+            </svg>
+        </div>
+    </nav>
+    <header>
+        <h1>Melhor pizza da Cidade</h1>
+    </header>
+    <main>
+        <section class="container" id="apresentacao">
+            <section class="pizzas">
+                <img src="img/pizza1.jpg" alt="">
+                <h3>margueritta</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, maxime voluptatibus blanditiis eum molestiae eos voluptate sed iure. Exercitationem quae assumenda laudantium, cupiditate ea non delectus enim sint nisi soluta.</p>
+                <a href="">Apenas R$ 69,99</a>
+            </section>
+
+            <section class="pizzas centro">
+                <img src="img/pizza2.jpg">
+                <h3>Calabresa</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptate at voluptatum eos! Vero provident harum itaque, consequatur deserunt accusamus ducimus tempore, numquam impedit cum doloribus ea illo voluptatibus aperiam.</P>
+                <a href="">Apenas R$ 79,99</a>
+            </section>
+            <section class="pizzas direita">
+                <img src="img/pizza3.jpg">
+                <h3>Brasileira</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptate at voluptatum eos! Vero provident harum itaque, consequatur deserunt accusamus ducimus tempore, numquam impedit cum doloribus ea illo voluptatibus aperiam.</P>
+                <a href="">Apenas R$ 99,99</a>
+            </section>
+        </section>
+    </main>
+    <script src="js/jquery.is"></script>
+    <script>
+    $(function() {
+        $("div#menu-btn").click(function() {
+            $("nav ul#menu-mobile").toggle();
+        });
+        $(window).resize(function() {
+            var largura =$(window).width();
+            if (largura >= 701 ) {
+                $("nav ul#menu-mobile").hide();
+            }
+        });
+    });
+    </script>
+    
+</body>
+</html>
