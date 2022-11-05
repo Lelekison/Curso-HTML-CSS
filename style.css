@@ -1,0 +1,142 @@
+body, textarea {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+}
+h1, h2, h3 {
+    color: rgb(5, 5, 5);
+}
+h1 {
+    font-weight: 900;
+}
+p {
+    color: #70747a;
+}
+.navbar-container {
+    width: 100%;
+    height: 80px;
+    background-color: #232a31;
+    padding: 0 2em;
+    position: relative;
+    box-sizing: border-box;
+}
+.logo {
+    width: 50px;
+    margin-top: 15px;
+}
+nav {
+    position: relative;
+}
+.navbar-item {
+    list-style: none;
+    position: absolute;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    right: 0;
+}
+.navbar-item li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+.navbar-item li a {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+.navbar-item le a:hover {
+    color: #ccc;
+}
+.default-btn {
+    padding: 15px 20px;
+    background-color: #2cc76a;
+    border-radius: 5px;
+    color: #fff;
+}
+.default-btn:hover {
+    background-color: #22bb5f;
+    color: #fff;
+}
+.main-banner {
+    background-image: url('img/mainbanner.png');
+    background-position: center;
+    background-size: cover;
+    padding: 10em 0;
+    position: relative;
+}
+.main-banner h1, .main-banner p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+.main-banner h1 {
+    font-size: 54px;
+}
+.main-banner p{
+    font-size: 32px;
+}
+.specialties-container  {
+    padding: 5em 0;
+}
+.specialties-container ul {
+    display: flex;
+    width: 90%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+}
+.specialties-container ul li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+.fas {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.fa-shield-alt {
+    color: #2cc76a;
+}
+.fa-circle-up {
+    color: #22bb5f;
+    align-items: center;
+    padding: 50px;
+}
+.fa-rocket {
+    color: #ef3f29;
+}
+.fa-comments {
+    color: #ef8f29;
+}
+.specialties-container ul li h3{
+    margin-bottom: 25px;
+    color: rgb(3, 3, 3);
+}
+.specialties-container ul li p {
+    line-height: 24px;
+    color: rgb(7, 7, 7);
+}
+.precing-container{
+    padding-bottom: 5em;
+    text-align: center;
+}
+.precing-container h1{
+    font-size: 36px;
+    margin-top: 0;
+}
+.precing-container p {
+    font-size: 20px;
+}
+.plans-contaier {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 90%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
