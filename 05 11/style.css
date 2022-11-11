@@ -123,15 +123,21 @@ nav {
 .precing-container{
     padding-bottom: 5em;
     text-align: center;
+    background-image: url(img/tec.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .precing-container h1{
     font-size: 36px;
     margin-top: 0;
+    color: #fff;
 }
 .precing-container p {
     font-size: 20px;
+    color: #ccc;
 }
-.plans-contaier {
+.plans-container {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -139,4 +145,185 @@ nav {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+}
+.plan {
+    flex: 1 1 200px;
+    max-width: 275px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.plan ul {
+    padding: 0;
+}
+.plan li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ffff;
+    color: #333;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+.plan .price {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #2cc76a;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;
+    font-size: 18px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -50px;
+}
+.plan .plan-name {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #202b34;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.plan .plan-btn{
+    text-transform: uppercase;
+        background-color: #2cc76a;
+        color: #fff;
+        font-size: 24px;
+        height: 75px;
+        line-height: 75px;
+        cursor: pointer;
+}
+.plan .recommended {
+    background-color: #f01b1b;
+}
+.searchdomain-container {
+    background-color: #1e1919;
+    text-align: center;
+    padding: 5em 0;
+}
+.searchdomain-container h2 {
+    color: #fff;
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.searchdomain-container p {
+    color: #d5d5d5;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.searchdomain-container input {
+    display: block;
+    position: relative;
+    margin-left:  auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 5px;
+}
+.searchdomain-container input[type=text] {
+    margin-bottom: 25px;
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+}
+.searchdomain-container input[type=submit] {
+    background-color: #1ed760;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 34px;
+}
+.contact-container {
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 2em;
+    background-image: url(img/tec2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contact-container h2 {
+    font-size: 36px;
+    color: #fff;
+}
+.contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #ccc ;
+}
+.contact-container input, .contact-container textarea {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.contact-container textarea {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 468px;
+    height: 150px;
+}
+.contact-container input[type=submit] {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2cc76a;
+    color: #fff;
+}
+footer {
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 1100px){
+
+    .plan-container {
+        width:95%
+    }
+    .plan {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .plan-container , .specialties-container ul {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 576px) {
+    .navbar-item li {
+        font-size: 12;
+        margin-left: 10px;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+    .plan {
+        max-width: 100%;
+    }
+    .searchdomain-container {
+        padding: 3em 2em;
+    }
+    .container .searchdomain-container{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .contact-container {
+        padding: 3em 2em;
+    }
+    .contact-container input , .contact-container textarea {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
 }
