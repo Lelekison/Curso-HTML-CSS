@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Press+Start+2P&family=Roboto&display=swap');
+.body{
+    background: #afafaf;
+}
+.dino{
+    width: 60px;
+    height: 60px;
+    background-image: url(dino.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+.cactus{
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(cactus.png);
+}
+.game-over{
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: 'Specimen', cursive, sans-serif;
+}
+@keyframes slideright{
+    from{
+        background-position: 70000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
+.background{
+    position: absolute;
+    bottom: 0;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    animation: slideright 600s infinite linear;
+    width: 100px;
+    height: 200px;
+}
